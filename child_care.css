@@ -1,0 +1,142 @@
+:root {
+  --main-color: #2c5983;
+  --main-radius: 10px;
+  /* --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s; */
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  /* min-height: 100vh; */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  background-color: var(--main-color);
+  height: 100vh;
+}
+.login-box .form {
+  padding: 30px 20px 20px;
+  border: 2px solid #ddd;
+  background-color: #d9d9d9;
+  position: relative;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 15px;
+  width: 450px;
+}
+@media (max-width: 767px) {
+  .login-box {
+    padding: 15px;
+  }
+  .login-box .form {
+    width: 100%;
+  }
+}
+.login-box .form .title {
+  font-style: italic;
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.login-box .form .title img {
+  width: 60px;
+  height: 65px;
+  position: relative;
+  top: 14px;
+}
+.login-box .form .box {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: var(--main-radius);
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.login-box .form .box .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ddd;
+  color: #888;
+  transition: 0.3s;
+  order: 1;
+}
+.eye-color {
+  color: #888;
+}
+.login-box .form .box input {
+  flex-grow: 1;
+  height: 40px;
+  border: none;
+  background-color: #f6f6f6;
+  font-size: 15px;
+  padding-left: 10px;
+  order: 2;
+}
+.login-box .form .box input:focus + i {
+  color: var(--main-color);
+}
+.login-box .form input[type="submit"] {
+  display: block;
+  margin: 50px auto;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: var(--main-radius);
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.login-box .form .rem-pas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.login-box .form .rem-pas label,
+.login-box .form .rem-pas a {
+  color: var(--main-color);
+  cursor: pointer;
+  font-weight: 700;
+}
+.addchild {
+  display: flex;
+  min-height: 100vh;
+}
+.sidbar {
+  padding: 10px;
+  width: 60px;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .sidbar {
+    padding: 20px;
+    width: 215px;
+  }
+}

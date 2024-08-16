@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="child_care.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <title>Login page</title>
+    <style>
+      .box {
+        position: relative;
+      }
+      .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="addchild.php">
+      <div class="login-box">
+        <div class="form">
+          <!-- <div class="title">Login</div> -->
+          <div class="title">
+            <span>Child</span>
+            <img src="images/logo_end.png" alt="" />
+            <span>Care</span>
+          </div>
+          <div class="box">
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              oninput="filterEnNumUnderscore(event)"
+              title="Please enter only English letters, numbers, and underscores."
+              required
+            />
+            <i class="fas fa-user icon"></i>
+          </div>
+          <div class="box">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+              required
+            />
+            <i class="fas fa-lock icon"></i>
+            <i
+              onclick="togglePassword()"
+              id="toggle-icon"
+              class="fas fa-eye toggle-password eye-color"
+            ></i>
+          </div>
+          <div class="rem-pas">
+            <label>
+              <input type="checkbox" name="option1" value="option1" />
+              Remember Me
+            </label>
+            <a href="#">Forget Password?</a>
+          </div>
+
+          <input type="submit" value="Sign Up" />
+        </div>
+      </div>
+    </form>
+    <script src="./js/filterInput.js"></script>
+    <script>
+      function togglePassword() {
+        const passwordField = document.getElementById("password");
+        const toggleIcon = document.getElementById("toggle-icon");
+
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          toggleIcon.classList.remove("fa-eye");
+          toggleIcon.classList.add("fa-eye-slash");
+        } else {
+          passwordField.type = "password";
+          toggleIcon.classList.remove("fa-eye-slash");
+          toggleIcon.classList.add("fa-eye");
+        }
+      }
+    </script>
+  </body>
+</html>
