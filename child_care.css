@@ -244,20 +244,20 @@ a {
 .addchild .content .title input[type="search"] {
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 10px 10px 10px 30px;
-  width: 140px;
+  padding: 10px 10px 10px 24px;
+  width: 145px;
   transition: 0.5s;
   font-size: 13px;
 }
 .addchild .content .title input[type="search"]:focus {
-  width: 160px;
+  width: 165px;
 }
 .addchild .content .title input[type="search"]:focus::placeholder {
   color: transparent;
 }
 .addchild .content .title .ic-search {
   position: absolute;
-  left: 8px;
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--main-color);
