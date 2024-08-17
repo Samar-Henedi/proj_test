@@ -10,33 +10,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" />
-    <link rel="icon" type="image/png" href="images/logo.png" />
-    <title>Login page</title>
-    <style>
-        .box {
-            position: relative;
-        }
-
-        .toggle-password {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-    </style>
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <title>Add a child</title>
 </head>
 
 <body>
-    <form action="post">
+    <form action="get">
         <div class="addchild">
             <div class="sidbar">
-                sidbar
+                <div class="inforamtion-sid">
+                    <img src="images/male.png" alt="">
+                    <span class="span-sid">Samar Henedi</span>
+                    <span class="span-sid">Manager</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <span>Add a Child</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Search a Child</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="content">
-                content
+                <div class="title">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass ic-search"></i>
+                        <input type="search" placeholder="Type A Keyword" name="search" />
+                    </div>
+                    <div class="prof">
+                        <img src="images/logo-removebg-preview.png" alt="Profile-img" />
+                        <i class="fas fa-bars "></i>
+                    </div>
+                </div>
+                <div class="form">
+
+                </div>
             </div>
         </div>
 
