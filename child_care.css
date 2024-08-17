@@ -19,12 +19,24 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 a {
   text-decoration: none;
 }
 *:focus {
   outline: none;
+}
+.box {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 .login-box {
   display: flex;
@@ -130,9 +142,10 @@ a {
 }
 .sidbar {
   padding: 10px;
-  width: 60px;
-  box-shadow: 0 0 10px #ddd;
+  width: 80px;
+  box-shadow: 0 0 10px #c9c9c9;
   position: relative;
+  background-color: #fbfbfb;
 }
 @media (min-width: 768px) {
   .sidbar {
@@ -140,3 +153,127 @@ a {
     width: 215px;
   }
 }
+.addchild .sidbar .inforamtion-sid img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  outline: 3px solid var(--main-color);
+}
+
+.addchild .sidbar .inforamtion-sid .span-sid {
+  display: block;
+  margin: 0 auto 5px;
+  text-align: center;
+  color: var(--main-color);
+}
+@media (max-width: 768px) {
+  .addchild .sidbar .inforamtion-sid img {
+    width: 60px;
+    height: 60px;
+  }
+  .addchild .sidbar .inforamtion-sid .span-sid {
+    font-size: 12px;
+  }
+}
+.addchild .sidbar .inforamtion-sid {
+  position: relative;
+  margin-bottom: 40px;
+}
+.addchild .sidbar .inforamtion-sid::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15%;
+  width: 70%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+.addchild .sidbar .inforamtion-sid::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  border: 2px solid #eee;
+}
+.addchild .sidbar ul li a {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: var(--main-color);
+  border-radius: 5px;
+}
+.addchild .sidbar ul li a span {
+  margin-left: 5px;
+  font-size: 16px;
+}
+.sidbar ul li a:hover,
+.sidbar ul li a.active {
+  background-color: #eee;
+}
+@media (max-width: 768px) {
+  .addchild .sidbar ul li a {
+    justify-content: center;
+  }
+  .addchild .sidbar .inforamtion-sid::after,
+  .addchild .sidbar ul li a span {
+    display: none;
+  }
+}
+.addchild .content {
+  flex: 1;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+.addchild .content .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #fbfbfb;
+}
+.addchild .content .title .search {
+  position: relative;
+}
+.addchild .content .title input[type="search"] {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 10px 10px 30px;
+  width: 160px;
+  transition: 0.5s;
+  font-size: 13px;
+}
+.addchild .content .title input[type="search"]:focus {
+  width: 200px;
+}
+.addchild .content .title input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+.addchild .content .title .ic-search {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color);
+}
+.addchild .content .title .prof {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.addchild .content .title .prof img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+}
+
+/* .addchild .content .form {
+  background-color: #f1f5f9;
+  height: 200px;
+} */
