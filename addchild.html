@@ -16,13 +16,13 @@
 </head>
 
 <body>
-    <form action="get">
+    <form action="post">
         <div class="addchild">
             <div class="sidbar">
                 <div class="inforamtion-sid">
-                    <img src="images/male.png" alt="">
+                    <img src="images/female7.jpg" alt="">
                     <span class="span-sid">Samar Henedi</span>
-                    <span class="span-sid">Manager</span>
+                    <span class="span-sid">Employee</span>
                 </div>
                 <ul>
                     <li>
@@ -57,8 +57,59 @@
                     </div>
                 </div>
                 <div class="form">
+                    <div class="box">
+                        <span>Name</span>
+                        <input class="input-add" name="child-name" type="text" oninput="filterInputAr(event)" title="الرجاء ادخال اسم الطفل باللغة العربية فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>Father Name</span>
+                        <input class="input-add" name="father-name" type="text" oninput="filterInputAr(event)" title="الرجاء ادخال اسم الأب باللغة العربية فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>Mother Name</span>
+                        <input class="input-add" name="mother-name" type="text" oninput="filterInputAr(event)" title="الرجاء ادخال اسم الأم باللغة العربية فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>Last Name</span>
+                        <input class="input-add" name="last-name" type="text" oninput="filterInputAr(event)" title="الرجاء ادخال الكنية باللغة العربية فقط" required="">
+                    </div>
 
+                    <div class="box">
+                        <span>Age(month)</span>
+                        <input class="input-add" id="month-age" name="month-age" type="text" oninput="filterInput(event)" title="الرجاء ادخال ارقام صحيحة فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>weight(kg)</span>
+                        <input class="input-add" name="weight" type="text" oninput="filterInput1(event)" title="الرجاء ادخال ارقام عشرية فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>height(cm)</span>
+                        <input class="input-add" name="length" type="text" oninput="filterInput1(event)" title="الرجاء ادخال ارقام عشرية فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>MUAC (mm)</span>
+                        <input class="input-add" name="muac" type="text" oninput="filterInput(event)" title="الرجاء ادخال ارقام صحيحة فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>Phone Number</span>
+                        <input class="input-add" name="mobile-ph" type="text" oninput="filterInput(event)" title="الرجاء ادخال ارقام صحيحة فقط" required="">
+                    </div>
+                    <div class="box">
+                        <span>Gender</span>
+                        <select class="dropdown2" name="gender">
+                            <option value="0">Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="box1">
+                        <label>
+                            <input type="checkbox" name="option1" value="option1">
+                            Edma
+                        </label>
+                    </div>
                 </div>
+                <input type="submit" value="Add" />
             </div>
         </div>
 
