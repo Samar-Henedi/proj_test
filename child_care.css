@@ -291,21 +291,20 @@ a {
   display: block;
   margin-bottom: 5px;
   border-radius: 5px;
-  /* background-color: var(--main-color); */
+  background-color: var(--main-color); 
   padding: 5px;
   color: white;
-  background-color: #3b6893;
 }
 .addchild .content .form .box input,
 select {
   width: 100%;
   padding: 5px;
   border: none;
-  /* background-color: #4480b7; */
+  background-color: #4480b7;
   border-radius: 5px;
-  /* color: white; */
+  color: white;
   text-align: center;
-  background-color: #82a4c7;
+
 }
 .addchild .content .form .box1 input[type="checkbox"] {
   width: 20px;
