@@ -245,12 +245,12 @@ a {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px 10px 10px 30px;
-  width: 160px;
+  width: 140px;
   transition: 0.5s;
   font-size: 13px;
 }
 .addchild .content .title input[type="search"]:focus {
-  width: 200px;
+  width: 160px;
 }
 .addchild .content .title input[type="search"]:focus::placeholder {
   color: transparent;
