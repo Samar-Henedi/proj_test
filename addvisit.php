@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <form action="post">
+    <form action="get">
         <div class="main-page">
             <div class="sidbar">
                 <div class="inforamtion-sid">
