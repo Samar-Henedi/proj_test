@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="child_care.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <title>Add a child</title>
+</head>
+
+<body>
+    <form action="post">
+        <div class="main-page">
+            <div class="sidbar">
+                <div class="inforamtion-sid">
+                    <img src="images/female7.jpg" alt="">
+                    <span class="span-sid">Samar Henedi</span>
+                    <span class="span-sid">Employee</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="addchild.php" class="active">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <span>Add a Child</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="searchchild.php">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Search a Child</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="title">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass ic-search"></i>
+                        <input type="search" placeholder="Type A Keyword" name="search" />
+                    </div>
+                    <div class="prof">
+                        <img src="images/logo-removebg-preview.png" alt="Profile-img" />
+                        <i class="fas fa-bars "></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="form">
+                        <div class="box">
+                            <span>child Number</span>
+                            <input name="mobile-ph" type="text" oninput="filterInput(event)" title="الرجاء ادخال ارقام صحيحة فقط" required="">
+                        </div>
+                        <div class="box">
+                            <span>Name</span>
+                            <input name="child-name" type="text">
+                        </div>
+                        <div class="box">
+                            <span>Father Name</span>
+                            <input name="father-name" type="text">
+                        </div>
+                        <div class="box">
+                            <span>Mother Name</span>
+                            <input name="mother-name" type="text">
+                        </div>
+                        <div class="box">
+                            <span>Last Name</span>
+                            <input name="last-name" type="text">
+                        </div>
+                        <div class="box">
+                            <span>Gender</span>
+                            <input name="Gender" type="text">
+                        </div>
+                        <div class="box">
+                            <span>City</span>
+                            <select name="gender" style="background-color: #2c5983;">
+                                <option value="1">دمشق</option>
+                                <option value="2">ريف دمشق</option>
+                                <option value="3">حلب</option>
+                                <option value="4">حمص</option>
+                                <option value="5">حماة</option>
+                                <option value="6">اللاذقية</option>
+                                <option value="7">طرطوس</option>
+                                <option value="8">دير الزور</option>
+                                <option value="9">الرقة</option>
+                                <option value="10">الحسكة</option>
+                                <option value="11">درعا</option>
+                                <option value="12">القنيطرة</option>
+                                <option value="13">السويداء</option>
+                                <option value="14">ادلب</option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <span>Health Center</span>
+                            <select name="gender" style="background-color: #2c5983;">
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="Transport " class="submit" />
+                </div>
+
+
+            </div>
+        </div>
+
+    </form>
+    <script src="./js/filterInput.js"></script>
+
+</body>
+
+</html>
