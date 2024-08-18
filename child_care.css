@@ -136,7 +136,7 @@ a {
   cursor: pointer;
   font-weight: 700;
 }
-.addchild {
+.main-page {
   display: flex;
   min-height: 100vh;
 }
@@ -153,7 +153,7 @@ a {
     width: 215px;
   }
 }
-.addchild .sidbar .inforamtion-sid img {
+.main-page .sidbar .inforamtion-sid img {
   display: block;
   width: 120px;
   height: 120px;
@@ -162,26 +162,26 @@ a {
   outline: 3px solid var(--main-color);
 }
 
-.addchild .sidbar .inforamtion-sid .span-sid {
+.main-page .sidbar .inforamtion-sid .span-sid {
   display: block;
   margin: 0 auto 5px;
   text-align: center;
   color: var(--main-color);
 }
 @media (max-width: 768px) {
-  .addchild .sidbar .inforamtion-sid img {
+  .main-page .sidbar .inforamtion-sid img {
     width: 60px;
     height: 60px;
   }
-  .addchild .sidbar .inforamtion-sid .span-sid {
+  .main-page .sidbar .inforamtion-sid .span-sid {
     font-size: 12px;
   }
 }
-.addchild .sidbar .inforamtion-sid {
+.main-page .sidbar .inforamtion-sid {
   position: relative;
   margin-bottom: 40px;
 }
-.addchild .sidbar .inforamtion-sid::before {
+.main-page .sidbar .inforamtion-sid::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -190,7 +190,7 @@ a {
   height: 3px;
   background-color: var(--main-color);
 }
-.addchild .sidbar .inforamtion-sid::after {
+.main-page .sidbar .inforamtion-sid::after {
   content: "";
   position: absolute;
   bottom: -16px;
@@ -202,14 +202,14 @@ a {
   border-radius: 50%;
   border: 2px solid #eee;
 }
-.addchild .sidbar ul li a {
+.main-page .sidbar ul li a {
   display: flex;
   padding: 10px;
   margin-bottom: 5px;
   color: var(--main-color);
   border-radius: 5px;
 }
-.addchild .sidbar ul li a span {
+.main-page .sidbar ul li a span {
   margin-left: 5px;
   font-size: 16px;
 }
@@ -218,30 +218,30 @@ a {
   background-color: #eee;
 }
 @media (max-width: 768px) {
-  .addchild .sidbar ul li a {
+  .main-page .sidbar ul li a {
     justify-content: center;
   }
-  .addchild .sidbar .inforamtion-sid::after,
-  .addchild .sidbar ul li a span {
+  .main-page .sidbar .inforamtion-sid::after,
+  .main-page .sidbar ul li a span {
     display: none;
   }
 }
-.addchild .content {
+.main-page .content {
   flex: 1;
   overflow: hidden;
   background-color: #f1f5f9;
 }
-.addchild .content .title {
+.main-page .content .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
   background-color: #fbfbfb;
 }
-.addchild .content .title .search {
+.main-page .content .title .search {
   position: relative;
 }
-.addchild .content .title input[type="search"] {
+.main-page .content .title input[type="search"] {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px 10px 10px 24px;
@@ -249,77 +249,123 @@ a {
   transition: 0.5s;
   font-size: 13px;
 }
-.addchild .content .title input[type="search"]:focus {
+.main-page .content .title input[type="search"]:focus {
   width: 165px;
 }
-.addchild .content .title input[type="search"]:focus::placeholder {
+.main-page .content .title input[type="search"]:focus::placeholder {
   color: transparent;
 }
-.addchild .content .title .ic-search {
+.main-page .content .title .ic-search {
   position: absolute;
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--main-color);
 }
-.addchild .content .title .prof {
+.main-page .content .title .prof {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.addchild .content .title .prof img {
+.main-page .content .title .prof img {
   width: 40px;
   height: 40px;
   border-radius: 20%;
 }
-.addchild .content .title .prof i {
+.main-page .content .title .prof i {
   color: var(--main-color);
   font-size: 20px;
 }
-.addchild .content .form {
+.main-page .content .container {
+  margin: 20px;
+}
+.main-page .content .form {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 20px;
-  margin: 20px;
   padding: 20px;
   background-color: #cfd8dc;
   border: 1px solid #eee;
   border-radius: 10px;
   align-items: center;
 }
-.addchild .content .form .box span {
+.main-page .content .form .box span {
   display: block;
   margin-bottom: 5px;
   border-radius: 5px;
-  background-color: var(--main-color); 
-  padding: 5px;
+  background-color: var(--main-color);
+  padding: 8px 5px;
   color: white;
+  /* background-color: #3b6893; */
 }
-.addchild .content .form .box input,
+.main-page .content .form .box input,
 select {
   width: 100%;
-  padding: 5px;
+  padding: 8px 5px;
   border: none;
   background-color: #4480b7;
   border-radius: 5px;
   color: white;
   text-align: center;
-
+  /* background-color: #82a4c7; */
 }
-.addchild .content .form .box1 input[type="checkbox"] {
+.main-page .content .box1 label {
+  cursor: pointer;
+}
+.main-page .content .box1 input[type="checkbox"] {
   width: 20px;
   height: 20px;
   position: relative;
   bottom: -4px;
 }
-.addchild .content input[type="submit"] {
+.main-page .content .container > [type="submit"] {
   display: block;
-  margin: 50px auto 30px;
-  padding: 10px 30px;
+  margin: 50px auto 20px;
+}
+.submit {
   background-color: var(--main-color);
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
+  padding: 10px;
+  width: 130px;
+}
+.main-page .content .container .search-child {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-page .content .container .search-child .input-add {
+  width: 135px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: #2c5983;
+  border: none;
+}
+.input-add::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 13px;
+}
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.main-page .content .form > span {
+  grid-column: 1 / -1;
+  max-width: 160px;
+  background-color: #2c5983;
+  padding: 10px 5px;
+  color: white;
+  border-radius: 6px;
 }
