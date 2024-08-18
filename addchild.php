@@ -32,13 +32,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="searchchild.html">
+                        <a href="searchchild.php">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <span>Search a Child</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html">
+                        <a href="#">
                             <i class="fas fa-sign-out-alt"></i>
                             <span>Log Out</span>
                         </a>
