@@ -235,7 +235,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 25px;
   background-color: #fbfbfb;
 }
 .main-page .content .title .search {
@@ -272,9 +272,51 @@ a {
   height: 40px;
   border-radius: 20%;
 }
+.main-page .content .title .prof .links {
+  position: relative;
+}
+.main-page .content .title .prof .links ul {
+  position: absolute;
+  right: -5px;
+  top: calc(100% + 10px);
+  min-width: 200px;
+  font-size: 12px;
+  background-color: var(--main-color);
+  white-space: nowrap;
+  display: none;
+  z-index: 1;
+}
+.main-page .content .title .prof .links ul li {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+.main-page .content .title .prof .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.main-page .content .title .prof .links ul::before {
+  content: "";
+  border-width: 16px;
+  border-style: solid;
+  border-color: transparent transparent var(--main-color) transparent;
+  position: absolute;
+  right: 0px;
+  top: -31px;
+}
 .main-page .content .title .prof i {
   color: var(--main-color);
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.main-page .content .title .prof .links:hover ul {
+  display: block;
+}
+.main-page .content .title .prof .links ul li a:hover {
+  padding-left: 25px;
 }
 .main-page .content .container {
   margin: 20px;
